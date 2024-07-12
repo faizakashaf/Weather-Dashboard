@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container dashboard">
+        <div class="row header p-2">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h3 class="col-6 mt-2 main-heading-color">
+                    Weather Dashboard
+                </h3>
+                <div class=" d-flex justify-content-center align-items-center">
+                    <input type="text" placeholder="Search for your preferred city..."
+                        class="form-control search-bar mx-2 input">
+                    <button class="btn btn-primary searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="row main-content mt-3">
+            <div class="col-md-6 location-info p-3">
+                <div class="card text-center h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                        <h3 id="city" class="card-title mb-2">Lahore</h3>
+                        <h5 id="country">City of </h5>
+                        <h1 id="time">09:03</h1>
+                        <p id="date">Thursday, 31 Aug</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 weather-info p-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h3 id="temp">24°C</h3>
+                        <p id="feel-like">Feels like: </p>
+                        <h4 id="description">Sunny</h4>
+
+
+                        <div class="d-flex justify-content-between mt-3 px-4">
+                            <div>
+                                <p id="sunrise">Sunrise</p>
+                                <p id="sunrise-time">6:07 AM</p>
+                            </div>
+                            <div>
+                                <p id="sunset">Sunset</p>
+                                <p id="sunset-time">8:31 PM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <p id="humidity">45% Humidity</p>
+                            </div>
+                            <div>
+                                <p id="wind">23km/h Wind</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 forecast-info p-3">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <h4>5 Days Forecast</h4>
+                        <div class="forecast-item row align-items-center">
+                            <div class="col-4">
+
+                                <img src="https://via.placeholder.com/30" alt="Weather Icon">
+                            </div>
+                            <div class="col-4">
+                                <p>27°C</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Friday, 1 Sep</p>
+                            </div>
+                        </div>
+                        <div class="forecast-item row align-items-center">
+                            <div class="col-4">
+
+                                <img src="https://via.placeholder.com/30" alt="Weather Icon">
+                            </div>
+                            <div class="col-4">
+                                <p>28°C</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Saturday, 2 Sep</p>
+                            </div>
+                        </div>
+                        <div class="forecast-item row align-items-center">
+                            <div class="col-4">
+
+                                <img src="https://via.placeholder.com/30" alt="Weather Icon">
+                            </div>
+                            <div class="col-4">
+                                <p>29°C</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Sunday, 3 Sep</p>
+                            </div>
+                        </div>
+                        <div class="forecast-item row align-items-center">
+                            <div class="col-4">
+
+                                <img src="https://via.placeholder.com/30" alt="Weather Icon">
+                            </div>
+                            <div class="col-4">
+                                <p>39°C</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Monday, 4 Sep</p>
+                            </div>
+                        </div>
+                        <div class="forecast-item row align-items-center">
+                            <div class="col-4">
+                                <!-- Placeholder for weather icon -->
+                                <img src="https://via.placeholder.com/30" alt="Weather Icon">
+                            </div>
+                            <div class="col-4">
+                                <p>18°C</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Tuesday, 5 Sep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 hourly-forecast p-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h4>Hourly Forecast</h4>
+                        <div class="hourly-item">
+                            <p>12:00</p>
+                            <p>24°C</p>
+                            <p><img src="https://via.placeholder.com/20" alt="sunny"></p>
+                        </div>
+                        <div class="hourly-item">
+                            <p>15:00</p>
+                            <p>25°C</p>
+                            <p><img src="https://via.placeholder.com/20" alt="sunny"></p>
+                        </div>
+                        <div class="hourly-item">
+                            <p>18:00</p>
+                            <p>23°C</p>
+                            <p><img src="https://via.placeholder.com/20" alt="cloudy"></p>
+                        </div>
+                        <div class="hourly-item">
+                            <p>21:00</p>
+                            <p>21°C</p>
+                            <p><img src="https://via.placeholder.com/20" alt="cloudy"></p>
+                        </div>
+                        <div class="hourly-item">
+                            <p>00:00</p>
+                            <p>19°C</p>
+                            <p><img src="https://via.placeholder.com/20" alt="night"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
