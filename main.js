@@ -17,7 +17,7 @@ const apiUrl = ` https://api.openweathermap.org/data/2.5/forecast?q=${city}&appi
    .then((res)=> res.json()
         .then((data)=>{
             // console.log(data.city.name)
-            console.log(data)
+            // console.log(data)
             updateLocationData(data)
             weatherInfo(data)
             fiveDaysForecaste(data)
@@ -75,7 +75,38 @@ const timezoneOffset  = 18000;
    document.getElementById("wind").innerText = `${data.list[0].wind.speed} km/h Wind`
 }
 
+const forcastCard = document.querySelector(".forecast-card");
+
 function fiveDaysForecaste(data){
 
+    for(let i = 1; i< 6;i++){
+        const intervals = data.list[i * 7];
+        console.log(intervals)
+
+        const forcastElement = document.createElement("div");
+        forcastElement.classList.add("forecast-item")
+        forcastElement.classList.add("row")
+        forcastElement.classList.add("align-items-center");
+
+        const forcasteImage = document.createElement("div");
+        forcasteImage.classList.add("col-4")
+        const img = document.createElement("img");
+        img.src = `http://openweathermap.org/img/wn/${intervals.weather[0].icon}@2x.png`;
+        img.alt = `${intervals.weather[0].description}`
+       
+        const temperature = document.createElement("p");
+        temperature.classList.add("col-4")
+        temperature.innerText = `${intervals.main.temp}°C `
+        const forcasteDate = document.createElement("p");
+        forcasteDate.classList.add("col-4")
+        forcasteDate.innerText = fetchingDateFromCurrentDate(new Date(intervals.dt * 1000));
+
+  forcasteImage.appendChild(img);
+  forcastElement.appendChild(forcasteImage);
+  forcastElement.appendChild(temperature);
+  forcastElement.appendChild(forcasteDate);
+
+  forcastCard.appendChild(forcastElement)
+        }
 }
 
