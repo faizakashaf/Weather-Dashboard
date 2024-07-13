@@ -3,6 +3,8 @@ const apikey = "c8ed76bb15c094b69f5fcb9169d4b02b"
 const searchBarInput = document.querySelector(".input");
 const searchBtn = document.querySelector(".searchBtn");
 const defaultCity = "Karachi";
+const tempToggleBtn = document.getElementById('temp-toggle');
+    let isCelsius = true;
 
 function userInput(){
     const input = searchBarInput.value.trim();
@@ -204,5 +206,31 @@ hourlyColumn.appendChild(hourlyItem);
 hourly_Forecast.appendChild(hourlyColumn);
 }
 }
+
+//Conversion ceslcius to farheinhet
+tempToggleBtn.addEventListener('click', () => {
+    const tempElement = document.getElementById('temp');
+    const feelLikeElement = document.getElementById('feel-like');
+    let temp = parseFloat(tempElement.textContent);
+    let feelLike = parseFloat(feelLikeElement.textContent.split(' ')[2]);
+
+    if (isCelsius) {
+        temp = (temp * 9/5) + 32;
+        feelLike = (feelLike * 9/5) + 32;
+        tempElement.textContent = `${Math.round(temp)} °F`;
+        feelLikeElement.textContent = `Feels Like ${Math.round(feelLike)} °F`;
+        tempToggleBtn.textContent = '°C';
+    } else {
+        temp = (temp - 32) * 5/9;
+        feelLike = (feelLike - 32) * 5/9;
+        tempElement.textContent = `${Math.round(temp)} °C`;
+        feelLikeElement.textContent = `Feels Like ${Math.round(feelLike)} °C`;
+        tempToggleBtn.textContent = '°F';
+    }
+    isCelsius = !isCelsius;
+});
 })
+
+
+
 
