@@ -2,6 +2,7 @@ body {
     background-color: #f2f2f2;
     color: #333;
     font-family: 'Arial', sans-serif;
+    margin-left: 10px;
 }
 
 .dashboard {
@@ -16,25 +17,69 @@ body {
     width: 600px;
     max-width: 300px;
 }
+
 .main-heading-color {
-    color :#0d6efd
+    color: #0d6efd;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.temperature{
+    font-size: 2rem;
 }
 
 .location-info .card, 
 .weather-info .card, 
 .forecast-info .card, 
 .hourly-forecast .card {
-    background-color: #93b6eb;
     border: none;
     color: white;
     height: 100%;
+}
+
+.location-info {
+    padding: 0;
+}
+
+.location-info .card {
+    background-color: #DC3545;  
+    padding: 0;
+}
+
+.weather-info .card {
+    background-color: #0D6EFD;
+}
+.forecast-info .card{
+    background-color: #6f42c1;
+}
+.hourly-forecast .card {
+    background-color: #ffc107; 
+}
+.hourly-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+.hourly-forecast {
+    color: white;
+    border-radius: 10px; 
+}
+
+.hourly-item {
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+}
+.card-body {
+    padding: 0 !important;
 }
 
 .card-body h1, 
 .card-body h3, 
 .card-body h4, 
 .card-body p {
-    margin: 0;
+    margin: 5px 0; 
 }
 
 .forecast-item, 
@@ -42,7 +87,18 @@ body {
     margin-bottom: 10px;
 }
 
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hourly-item {
+    text-align: center;
+}
+
 .forecast-item p, 
 .hourly-item p {
-    margin: 5px 0;
+    margin: 4px 0;
 }
+
