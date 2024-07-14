@@ -1,0 +1,54 @@
+.custom-control-input {
+    display: none;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #343a40;
+    background-image: url('assets/moon.jpg');
+    background-size: cover;
+    border-color: #343a40;
+}
+
+.custom-switch .custom-control-input ~ .custom-control-label::before {
+    background-color: #ffc107;
+    background-image: url('assets/sun-togle.jpg');
+    background-size: cover;
+    border-color: #ffc107;
+}
+
+.custom-switch .custom-control-label::before {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    content: "";
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s;
+    position: relative;
+}
+
+.custom-switch .custom-control-label::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    content: "";
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s;
+    display: none;
+
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(40px);
+}
+
+.custom-switch .custom-control-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 100px; 
+}

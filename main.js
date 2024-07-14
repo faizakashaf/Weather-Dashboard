@@ -229,6 +229,19 @@ tempToggleBtn.addEventListener('click', () => {
     }
     isCelsius = !isCelsius;
 });
+
+//Day Night toggle functionality
+    const toggle = document.getElementById("dayNightToggle");
+    toggle.addEventListener("change",function(){
+        if(this.checked){
+            document.body.style.backgroundColor = "#f0f0f0"
+           
+        }
+        else{
+            document.body.style.backgroundColor = "#2b2b2b"
+        }
+
+        })
 })
 
 

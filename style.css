@@ -51,6 +51,7 @@ body {
 }
 #temp-toggle{
     background-color: #2F4F4F;
+
     border: none;
 
 }
@@ -62,7 +63,6 @@ body {
 
 .weather-info .card {
     background-color: LightSkyBlue;
-
 }
 .forecast-info .card{
     background-color: Thistle;
