@@ -23,7 +23,7 @@ body {
 }
 
 .text-shadow {
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 .temperature{
     font-size: 2rem;
@@ -35,31 +35,48 @@ body {
 .hourly-forecast .card {
     border: none;
     color: white;
-    height: 100%;
+    height: 75%;
+    border-radius: 10px;
 }
+
 
 .location-info {
     padding: 0;
 }
 
 .location-info .card {
-    background-color: #DC3545;  
+    background-color: LightCoral;
     padding: 0;
+
+}
+#temp-toggle{
+    background-color: #2F4F4F;
+    border: none;
+
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .weather-info .card {
-    background-color: #0D6EFD;
+    background-color: LightSkyBlue;
+
 }
 .forecast-info .card{
-    background-color: #6f42c1;
+    background-color: Thistle;
+    height: 100%;
 }
 .hourly-forecast .card {
-    background-color: #ffc107; 
+    background-color: Khaki;
+    height: 100%;
+    color: black;
 }
 .hourly-item {
     display: flex;
     flex-direction: column;
-    gap: 8px; 
+    gap: 10px; 
 }
 .hourly-forecast {
     color: white;
@@ -79,12 +96,12 @@ body {
 .card-body h3, 
 .card-body h4, 
 .card-body p {
-    margin: 5px 0; 
+    margin: 4px 0; 
 }
 
 .forecast-item, 
 .hourly-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .forecast-item {

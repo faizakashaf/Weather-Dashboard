@@ -24,33 +24,30 @@
             </div>
         </div>
         <div class="row main-content mt-3">
-            <div class="col-md-5 location-info p-4">
-                <div class="card text-center h-100 m-0">
+            <div class="col-md-5 location-info p-3 ">
+                <div class="card text-center h-100 ">
                     <div class="card-body d-flex flex-column justify-content-center align-items-center m-0 p-0">
                         <h3 id="city" class="card-title text-shadow p-0 ">Lahore</h3>
-                        <h5 id="country" class="p-0 mt-2">City of Pakistan</h5>
-                        <h2 id="time" class="p-0  mt-2">09:03</h2>
-                        <p id="date" class=" p-0 mt-2">Thursday, 31 Aug</p>
+                        <h5 id="country" class=" mt-2">City of Pakistan</h5>
+                        <h2 id="time" class="  mt-2">09:03</h2>
+                        <p id="date" class="mt-2">Thursday, 31 Aug</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 weather-info p-4">
-                <div class="card text-center h-100 px-5 py-2">
-                    <div class="card-body">
-                        <h2 id="temp" class="mt-3 temperature text-shadow ">24°C</h2>
-                        <button id="temp-toggle" class="btn btn-secondary ">Convert to Fahrenheit</button>
-                        <p id="feel-like" class="mb-1">Feels like: </p>
-                        <h4 id="description" class="mb-1 text-dark">Sunny</h4>
-
-
-                        <div class="d-flex justify-content-between mt-3 px-4">
+            <div class="col-md-7 weather-info p-3 ">
+                <div class="card text-center h-100 px-5  ">
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between px-2 py-4 ">
                             <div>
                                 <img src="./assets/sunrise.png" style="width: 60px; height: 60px;" alt="">
                                 <p id="sunrise">Sunrise</p>
                                 <p id="sunrise-time">6:07 AM</p>
                             </div>
                             <div>
-                                <img id="weather-icon" src="" style="width: 150px; height: 150px;" alt="weatherIcon">
+                                <h2 id="temp" class=" temperature text-shadow ">24°C</h2>
+                                <button id="temp-toggle" class="btn btn-secondary ">Convert to Fahrenheit</button>
+                                <p id="feel-like" class="mb-1">Feels like: </p>
+                                <h4 id="description" class="mb-1 text-shadow">Sunny</h4>
                             </div>
                             <div>
                                 <img src="./assets/sunset.png" style="width: 60px; height: 60px;">
@@ -58,24 +55,28 @@
                                 <p id="sunset-time">8:31 PM</p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between mt-3">
+
+
+                        <div class="d-flex justify-content-between align-items-center ">
                             <div>
-                                <p id="humidity" class="mb-3"><img src="./assets/humidity.png" alt=""
+                                <p id="humidity"><img src="./assets/humidity.png" alt=""
                                         style="width: 30px; height: 30px; margin-right:5px;"> <span
                                         id="humidity-text">45% Humidity</span></p>
                             </div>
                             <div>
-                                <p id="wind" class="mb-3"> <img src="./assets/wind.png" alt=""
+                                <img id="weather-icon" src="" style="width: 100px; height: 100px;" alt="weatherIcon">
+                            </div>
+                            <div>
+                                <p id="wind"> <img src="./assets/wind.png" alt=""
                                         style="width: 30px; height: 30px; margin-right:5px;"><span id="wind-text">23km/h
                                         Wind</span></p>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Five days Forcast -->
-            <div class="col-md-5 forecast-info p-4 d-flex align-items-stretch">
+            <div class="col-md-5 forecast-info p-3 d-flex align-items-stretch ">
                 <div class="card text-center h-100 w-100 ">
                     <h3 class="mb-3 pt-3 fw-bold text-shadow">Five Days Forecast</h3>
                     <div class="card-body forecast-card">
@@ -91,7 +92,7 @@
                 </div>
             </div>
             <!-- Hourly Forcast -->
-            <div class="col-md-7 mx-auto hourly-forecast p-4 d-flex align-items-stretch">
+            <div class="col-md-7 mx-auto hourly-forecast p-3 d-flex align-items-stretch ">
                 <div class="card text-center h-100 w-100">
                     <div class="card-body hrlyforcast-card">
                         <h4 class="mb-3 pt-3 fw-bold text-shadow">Hourly Forecast</h4>
